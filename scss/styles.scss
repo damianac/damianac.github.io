@@ -154,12 +154,14 @@ header {
 
     ul {
         display: inline-block;
-        background: $background;
         text-align: center;
         padding: 10px;
         margin: 0;
         border-bottom-right-radius: 4px;
         border-bottom-left-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     li {
@@ -168,7 +170,7 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        color: white;
         padding: 10px;
 
         &:hover {
@@ -247,6 +249,15 @@ footer {
         color: $text;
     }
 }
+.email {
+    text-align: right;
+    padding-top: 20px;
+
+     p {
+        margin: 0;
+        color: $text;
+    }
+}
 
 .top {
     text-align: center;
@@ -268,7 +279,7 @@ footer {
 }
 
 .social {
-    text-align: right;
+    text-align: center;
 
     ul {
         margin: 5px 0 0 0;
@@ -276,6 +287,7 @@ footer {
     }
 
     li {
+        color: white;
         display: inline-block;
         font-size: 1.25em;
         list-style: none;
@@ -287,7 +299,10 @@ footer {
         padding: 10px;
 
         &:hover {
-            color: $base-color;
+            color: grey;
+        }
+        i {
+            color: white;
         }
     }
 }
@@ -350,7 +365,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/bckgrnd.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -651,6 +666,10 @@ footer {
 
 .project-image {
     float: left;
+    img {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 .project-info {
@@ -736,6 +755,9 @@ footer {
         margin: 0 0 15px 0;
         color: #fff;
         font-weight: 500;
+    }
+    p {
+        color: white;
     }
 }
 
@@ -926,6 +948,8 @@ footer {
         box-shadow: none;
         border-radius: 0;
         width: 100%;
+        text-transform: uppercase;
+        
 
         li {
             display: block;
